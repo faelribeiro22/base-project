@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "base-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prepare": "husky install",
     "test": "jest",
-    "watch": "jest --watch",
+    "test:watch": "jest --watch",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

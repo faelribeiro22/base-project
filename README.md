@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> A boilerplate nextjs, with typescript, storybook, jest, testing library and styled components
+> A base project nextjs, with typescript, storybook, jest, testing library, styled components and theme configuration
 
 ## Install
 
