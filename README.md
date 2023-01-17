@@ -50,7 +50,7 @@ yarn generate
 ## Run to create a new project based in this boilerplate
 
 ```sh
-yarn create next-app -e https://github.com/faelribeiro22/new-boilerplate
+yarn create next-app -e https://github.com/faelribeiro22/base-project
 ```
 
 ## Author
