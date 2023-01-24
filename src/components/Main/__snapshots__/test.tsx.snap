@@ -37,11 +37,13 @@ exports[`<Main /> should render the heading 1`] = `
 .c3 {
   font-size: 2rem;
   font-weight: 400;
+  color: #030517;
 }
 
 .c4 {
   margin-top: 3rem;
   width: min(30rem,100%);
+  color: #030517;
 }
 
 <main
