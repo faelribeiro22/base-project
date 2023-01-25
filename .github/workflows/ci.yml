@@ -25,8 +25,7 @@ jobs:
       - name: Build
         run: yarn build
 
-   dependabot:
-    name: 'Dependabot'
+  dependabot:
     needs: build # After the E2E and build jobs, if one of them fails, it won't merge the PR.
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'}} # Detect that the PR author is dependabot
