@@ -11,6 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
+      - name: Test Env
+      run: |
+        if [ "$GITHUB_TOKEN" == "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" ]
+        then
+          echo "got our secret"
+        fi
+      env:
+        GITHUB_TOKEN: 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
+
       - name: Dependabot metadata
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v1.3.1
@@ -18,4 +27,4 @@ jobs:
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.TOKEN}}
+          GITHUB_TOKEN: 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
