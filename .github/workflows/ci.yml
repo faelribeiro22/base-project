@@ -24,23 +24,3 @@ jobs:
 
       - name: Build
         run: yarn build
-
-  dependabot:
-    needs: build # After the E2E and build jobs, if one of them fails, it won't merge the PR.
-    runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'}} # Detect that the PR author is dependabot
-    steps:
-      - name: Test Env
-        run: |
-          if [ "$GITHUB_TOKEN" == "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" ]
-          then
-            echo "got our secret"
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-
-      - name: Enable auto-merge for Dependabot PRs
-        run: gh pr merge --auto --merge "$PR_URL" # Use Github CLI to merge automatically the PR
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
