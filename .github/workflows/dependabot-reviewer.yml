@@ -18,7 +18,7 @@ jobs:
           echo "got our secret"
         fi
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        GITHUB_TOKEN: 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
 
       - name: Dependabot metadata
         id: dependabot-metadata
