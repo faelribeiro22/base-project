@@ -13,12 +13,12 @@ jobs:
     steps:
       - name: Test Env
       run: |
-        if [ "$GITHUB_TOKEN" == "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" ]
+        if [ "$GITHUB_TOKEN" == "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" ]
         then
           echo "got our secret"
         fi
       env:
-        GITHUB_TOKEN: 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
+        GITHUB_TOKEN: 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
 
       - name: Dependabot metadata
         id: dependabot-metadata
@@ -27,4 +27,4 @@ jobs:
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
