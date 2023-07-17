@@ -5314,14 +5314,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.8":
-  version: 18.2.8
-  resolution: "@types/react@npm:18.2.8"
+"@types/react@npm:18.2.15":
+  version: 18.2.15
+  resolution: "@types/react@npm:18.2.15"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 351fe2450d30bff2ceb6aa84788e948317555e5ea22cb44f6778e08c977aab1878a0119bd94bc3d1bec5f5af4a75ffaa2ce111df5cd9d4ce26bfd719e4d971c2
+  checksum: 36989f638201bfe2f4110b06c119180f6df9c0e13d7060481e82e7a745f81745a01ae543c478a25b61e0767cb52e82da2ad5b0dedacabf99339e523d06176705
   languageName: node
   linkType: hard
 
@@ -6790,7 +6790,7 @@ __metadata:
     "@testing-library/react": ^14.0.0
     "@types/jest": ^29.5.2
     "@types/node": 20.2.5
-    "@types/react": 18.2.8
+    "@types/react": 18.2.15
     "@types/react-dom": 18.2.4
     "@types/styled-components": ^5.1.26
     babel-jest: ^29.5.0
@@ -16769,11 +16769,11 @@ __metadata:
 
 "typescript@patch:typescript@5.1.3#~builtin<compat/typescript>":
   version: 5.1.3
-  resolution: "typescript@patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=85af82"
+  resolution: "typescript@patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 32a25b2e128a4616f999d4ee502aabb1525d5647bc8955e6edf05d7fbc53af8aa98252e2f6ba80bcedfc0260c982b885f3c09cfac8bb65d2924f3133ad1e1e62
+  checksum: 6f0a9dca6bf4ce9dcaf4e282aade55ef4c56ecb5fb98d0a4a5c0113398815aea66d871b5611e83353e5953a19ed9ef103cf5a76ac0f276d550d1e7cd5344f61e
   languageName: node
   linkType: hard
 
